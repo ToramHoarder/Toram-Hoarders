@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Toram Hoader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('your-image-url.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Garamond, serif;
+  background-color: black;
+}
+
+
+/* Style the header */
+header {
+  background-color: maroon;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.logo {
+    position: absolute;
+    left: 22px; /* Position the logo on the left */
+    width: 80px;  /* Adjust size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    flex-grow: 1; /* Pushes the logo to the right */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+    color: white;
+    font-family: Garamond, serif;
+    
+}
+
+
+/* Container for flexboxes */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full screen height */
+  font-size: 20px;
+}
+
+/* White content container */
+.container {
+  background-color: black; /* Semi-transparent white */
+  padding: 60px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color:rgba(255, 255, 255, 0.9)
+
+}
+
+/* Button styling */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-style: Garamond, serif;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background-color 0.3s ease, color 0.3s ease;;
+  
+}
+
+.btn.map, 
+.btn.mon, 
+.btn.mats, 
+.btn.items, 
+.btn.xtals, 
+.btn.suggest,
+.btn.home {
+  background-color: maroon;
+}
+
+.btn.map:hover, 
+.btn.mon:hover, 
+.btn.mats:hover, 
+.btn.items:hover, 
+.btn.xtals:hover,
+.btn.suggest:hover,
+.btn.home:hover {
+  background-color: maroon;
+  color: red;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="logo.png" alt="Toram Logo" class="logo">
+    <h1>Toram Hoaders</h1>
+  </div>
+
+  <div class="button-container">
+    <button class="btn home"> Home </button>
+    <button class="btn map"> Maps </button>
+    <button class="btn mon"> Monsters </button>
+    <button class="btn mats"> Materials </button>
+    <button class="btn items"> Items </button>
+    <button class="btn xtals"> Xtals </button>
+    <button class="btn suggest"> Suggestion Box</button>
+
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Welcome to Toram Hoaders!</h2>
+    <p>Toram Hoaders is an online website that offers a well-organized collection of resource information from the world of Toram Online, making it easy to explore maps, identify Xtals, gather materials, discover monsters, and find items. Whether you're a seasoned player farming and selling or a beginner looking to gear up, our user-friendly layout ensures that every Toram players can navigate the game with ease. Dive in, and let the adventure begin! </p>
+    <p>Disclaimer: This website is a fan-made project and is not affiliated with or endorsed by Asobimo, Inc. All game assets and materials are the property of Asobimo, Inc.</p>
+    <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+    <p>Developer: Colee</p>
+    <img src="SmileFront.png" alt="Game Preview" class="content-image" width="150" height="190">
+  </div>
+</section>
+
+    
+</body>
+</html>

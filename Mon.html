@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Toram Hoader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  background: url('your-image-url.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Garamond, serif;
+  background-color: black;
+}
+
+
+/* Style the header */
+header {
+  background-color: maroon;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.logo {
+    position: absolute;
+    left: 22px; /* Position the logo on the left */
+    width: 80px;  /* Adjust size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    flex-grow: 1; /* Pushes the logo to the right */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+    color: white;
+    font-family: Garamond, serif;
+    
+}
+
+
+/* Container for flexboxes */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full screen height */
+  font-size: 20px;
+}
+
+/* White content container */
+.container {
+  background-color: black;
+  padding: 20px;
+  margin-left: 100px;
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button styling */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  gap: 40px; /* Space between buttons */
+  flex-wrap: wrap; /* Allow responsiveness */
+  margin-left: 10px;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-style: Garamond, serif;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background-color 0.3s ease, color 0.3s ease;;
+  
+}
+
+.btn.map, 
+.btn.mon, 
+.btn.mats, 
+.btn.items, 
+.btn.xtals, 
+.btn.suggest,
+.btn.home {
+  background-color: maroon;
+}
+
+.btn.map:hover, 
+.btn.mon:hover, 
+.btn.mats:hover, 
+.btn.items:hover, 
+.btn.xtals:hover,
+.btn.suggest:hover,
+.btn.home:hover {
+  background-color: maroon;
+  color: red;
+}
+
+.btn.mon1,
+.btn.mon2,
+.btn.mon3,
+.btn.mon4,
+.btn.mon5,
+.btn.mon6,
+.btn.mon7,
+.btn.mon8,
+.btn.mon9,
+.btn.mon10,
+.btn.mon11,
+.btn.mon12,
+.btn.mon13,
+.btn.mon14,
+.btn.mon15,
+.btn.mon16,
+.btn.mon17,
+.btn.mon18,
+.btn.mon19,
+.btn.mon20,
+.btn.mon21,
+.btn.mon22,
+.btn.mon23,
+.btn.mon24 {
+  background-color: rgb(43, 3, 3);
+  padding: 10px;
+  width: 250px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.mon1 img,
+.btn.mon2 img,
+.btn.mon3 img,
+.btn.mon4 img,
+.btn.mon5 img,
+.btn.mon6 img,
+.btn.mon7 img,
+.btn.mon8 img,
+.btn.mon9 img,
+.btn.mon10 img,
+.btn.mon11 img,
+.btn.mon12 img,
+.btn.mon13 img,
+.btn.mon14 img,
+.btn.mon15 img,
+.btn.mon16 img,
+.btn.mon17 img,
+.btn.mon18 img,
+.btn.mon19 img,
+.btn.mon20 img,
+.btn.mon21 img,
+.btn.mon22 img,
+.btn.mon23 img,
+.btn.mon24 img   {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 0px; /* Optional rounded corners */
+}
+
+.btn.mon1:hover,
+.btn.mon2:hover,
+.btn.mon3:hover,
+.btn.mon4:hover,
+.btn.mon5:hover,
+.btn.mon6:hover,
+.btn.mon7:hover,
+.btn.mon8:hover,
+.btn.mon9:hover,
+.btn.mon10:hover,
+.btn.mon11:hover,
+.btn.mon12:hover,
+.btn.mon13:hover,
+.btn.mon14:hover,
+.btn.mon15:hover,
+.btn.mon16:hover,
+.btn.mon17:hover,
+.btn.mon18:hover,
+.btn.mon19:hover,
+.btn.mon20:hover,
+.btn.mon21:hover,
+.btn.mon22:hover,
+.btn.mon23:hover,
+.btn.mon24:hover{
+    background-color:  rgb(92, 2, 2);
+}
+.container p {
+    text-align: left;  /* Align text to the left */
+    font-size: 24px;  /* Adjust font size if needed */
+    font-weight: bold;
+    margin-bottom: 20px;  /* Add spacing between text and button */
+    margin-left: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="logo.png" alt="Toram Logo" class="logo">
+    <h1>Toram Hoaders</h1>
+  </div>
+
+  <div class="button-container">
+    <button class="btn home"> Home </button>
+    <button class="btn map"> Maps </button>
+    <button class="btn mon"> Monsters </button>
+    <button class="btn mats"> Materials </button>
+    <button class="btn items"> Items </button>
+    <button class="btn xtals"> Xtals </button>
+    <button class="btn suggest"> Suggestion Box</button>
+  </div>
+</header>
+
+<section>
+    <div class="container">
+    <!-- Level 1-12 -->
+      <p>Level 1-12</p>
+      <div class="button-group">
+        <button class="btn mon1">
+          <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+        </button>
+        <button class="btn mon2">
+          <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+        </button>
+        <button class="btn mon3">
+          <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+        </button>
+        <button class="btn mon4">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon5">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon6">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon7">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon8">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon9">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon10">
+              <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+            </button>
+        <button class="btn mon11">
+                <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+            </button>
+        <button class="btn mon12">
+                <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+            </button>    
+      </div>
+
+      <p>Level 13-24</p>
+      <div class="button-group">
+        <button class="btn mon13">
+          <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+        </button>
+        <button class="btn mon14">
+          <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+        </button>
+        <button class="btn mon15">
+          <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+        </button>
+        <button class="btn mon16">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon17">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon18">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon19">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon20">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon21">
+            <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+          </button>
+        <button class="btn mon22">
+              <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+            </button>
+        <button class="btn mon23">
+                <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+            </button>
+        <button class="btn mon24">
+                <img src="logo.png" alt="Game Preview" class="content-image" width="400" height="400">
+            </button>    
+      </div>
+    </div>
+  </section>
+  
+
+    
+</body>
+</html>
